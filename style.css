@@ -1,1 +1,195 @@
-/* Add styles here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dm-sans-<uniquifier> {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  
+
+:root {
+    --white: #fff;
+    --blue-forms-background: #1E87E9;
+    --light-green-header: #CBFCFF;
+    --blue-font-header: #0C238F;
+    --blue-font: #0030A9;
+    --green-font: #00A68B;
+    --blue-font-p: #0030A9;
+    --green-button: #06FB2A;
+    --light-green-forms: #E4F7FF;
+    --bg-body: url(./imagens/bg-body.png);
+}
+
+
+body {
+    color: #1a4ab2; 
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background: var(--bg-body);
+    background-repeat: no-repeat;
+    background-size:auto;
+   
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+header img {
+    height: 6rem;
+    padding-inline: 5rem;
+}
+
+header div {
+    display: flex;
+    padding-right: 10rem;
+    gap: 5rem;
+}
+
+header div p {
+    font-weight: 700;
+    font-size: 0.875rem;
+    cursor: pointer;
+    color: var(--blue-font-header);
+}
+
+header div p:hover{
+    color: var(--green-font);
+    font-size: 1rem;
+}
+
+.informacoes {
+    display: flex;
+    align-items: center;
+    padding-left: 12rem;
+    gap: 2.5rem;
+}
+
+.conteudo {
+    flex: 1;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+}
+
+h1 span {
+    color: var(--green-font)
+}
+
+.informacoes p {
+    font-family: 'DM Sans', sans-serif;
+    color: #1a4ab2;
+    line-height: 1.6;
+    margin-bottom: 0.9375rem;
+    max-width: 31.25rem;
+}
+
+.informacoes img {
+    width: 35rem;
+    height: 30rem;
+    margin-right: 0;
+}
+
+.checks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 5rem;
+    margin-inline: 20rem;
+    max-width: 50rem;
+}
+
+.checks img {
+    width: 2.1875rem;
+    float: left;
+    margin-right: 0.625rem;
+}
+
+.checks p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+}
+
+.forms {
+    background: var(--blue-forms-background);
+    color: var(--white);
+    padding: 2.5rem 8%;
+    text-align: center;
+    border-radius: 1.875rem 1.875rem 0 0;
+}
+
+.forms > p {
+    font-weight: 600;
+    margin-bottom: 1.5625rem;
+    max-width: 37.5rem;
+    margin-inline: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9375rem;
+}
+
+form input::placeholder{
+    color: var(--blue-forms-background);
+}
+
+.input-box input {
+    width: 37.5rem;
+    padding: 0.9375rem 1.5625rem;
+    border: none;
+    border-radius: 0.75rem;
+    background-color: #e1f3ff;
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--green-button); /* Verde neon do botão */
+    color: white;
+    border: none;
+    padding: 0.9375rem 7.5rem;
+    font-weight: 900;
+    font-size: 1.25rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.9375rem rgba(0,0,0,0.2);
+    margin-top: 0.625rem;
+}
+
+#dados {
+    margin-top: 3.125rem;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    font-size: 0.8125rem;
+    flex-wrap: wrap;
+}
+
+#logoRodape{
+    width: 10rem;
+    height: 8rem;
+}
+
+.logos {
+    width: 1.5rem;
+    margin-left: 0.625rem;
+    cursor: pointer;
+}
