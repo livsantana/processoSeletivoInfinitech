@@ -9,8 +9,8 @@
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
-  }
-  
+}
+
 
 :root {
     --white: #fff;
@@ -27,14 +27,14 @@
 
 
 body {
-    color: #1a4ab2; 
+    color: #1a4ab2;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     font-size: 1rem;
     background: var(--bg-body);
     background-repeat: no-repeat;
-    background-size:auto;
-   
+    background-size: auto;
+
 }
 
 header {
@@ -62,7 +62,7 @@ header div p {
     color: var(--blue-font-header);
 }
 
-header div p:hover{
+header div p:hover {
     color: var(--green-font);
     font-size: 1rem;
 }
@@ -89,11 +89,20 @@ h1 span {
 }
 
 .informacoes p {
-    font-family: 'DM Sans', sans-serif;
+    font-size: 1.15rem;
     color: #1a4ab2;
     line-height: 1.6;
     margin-bottom: 0.9375rem;
     max-width: 31.25rem;
+}
+
+#paragrafo {
+    margin-left: 5rem;
+}
+
+#paragrafo span {
+    font-weight: 600;
+    font-style: italic;
 }
 
 .informacoes img {
@@ -103,6 +112,7 @@ h1 span {
 }
 
 .checks {
+    font-size: 1.15rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
@@ -132,7 +142,7 @@ h1 span {
     border-radius: 1.875rem 1.875rem 0 0;
 }
 
-.forms > p {
+.forms>p {
     font-weight: 600;
     margin-bottom: 1.5625rem;
     max-width: 37.5rem;
@@ -146,7 +156,7 @@ form {
     gap: 0.9375rem;
 }
 
-form input::placeholder{
+form input::placeholder {
     color: var(--blue-forms-background);
 }
 
@@ -160,7 +170,7 @@ form input::placeholder{
 }
 
 button {
-    background-color: var(--green-button); /* Verde neon do botão */
+    background-color: var(--green-button);
     color: white;
     border: none;
     padding: 0.9375rem 7.5rem;
@@ -168,7 +178,7 @@ button {
     font-size: 1.25rem;
     border-radius: 0.75rem;
     cursor: pointer;
-    box-shadow: 0 0.25rem 0.9375rem rgba(0,0,0,0.2);
+    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.2);
     margin-top: 0.625rem;
 }
 
@@ -183,7 +193,7 @@ button {
     flex-wrap: wrap;
 }
 
-#logoRodape{
+#logoRodape {
     width: 10rem;
     height: 8rem;
 }
@@ -192,4 +202,90 @@ button {
     width: 1.5rem;
     margin-left: 0.625rem;
     cursor: pointer;
+}
+
+@media(max-width: 1000px) {
+
+    header {
+        flex-direction: column;
+        gap: 0.9375rem;
+        padding: 1.25rem ;
+    }
+
+    header div {
+        gap: 0.9375rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header div p {
+        font-size: 0.75rem;
+    }
+
+
+    .informacoes {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.25rem;
+        gap: 1.25rem;
+    }
+
+    .informacoes h1 {
+        font-size: 2.375rem;
+    }
+
+    .informacoes img {
+        width: 100%;
+        max-width: 15rem;
+        max-height: 15rem;
+        margin-right: 0;
+    }
+
+    .informacoes p {
+        margin-inline: auto;
+    }
+
+
+    .checks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 10% 1.875rem 10%;
+    }
+
+    .checks p {
+        font-size: 1rem;
+        justify-content: center;
+    }
+
+    .forms {
+        padding: 2.5rem 5%;
+        border-radius: 2.5rem 2.5rem 0 0;
+    }
+
+    .input-box input {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+        padding: 0.9375rem 0;
+    }
+
+    #dados {
+        flex-direction: column;
+        gap: 0.625rem;
+        margin-top: 1.875rem;
+    }
+
+    #dados p {
+        font-size: 0.875rem;
+    }
+
+    .social-icons-container {
+        display: flex;
+        justify-content: center;
+        gap: 0.9375rem;
+        margin-top: 0.625rem;
+    }
 }
