@@ -49,20 +49,21 @@ header img {
     padding-inline: 5rem;
 }
 
-header div {
+header nav {
     display: flex;
     padding-right: 10rem;
     gap: 5rem;
 }
 
-header div p {
+header nav a {
     font-weight: 700;
     font-size: 0.875rem;
+    text-decoration: none;
     cursor: pointer;
     color: var(--blue-font-header);
 }
 
-header div p:hover {
+header nav a:hover {
     color: var(--green-font);
     font-size: 1rem;
 }
@@ -209,17 +210,18 @@ button {
     header {
         flex-direction: column;
         gap: 0.9375rem;
-        padding: 1.25rem ;
+        padding: 1.25rem;
     }
 
-    header div {
+    header nav {
         gap: 0.9375rem;
         flex-wrap: wrap;
         justify-content: center;
+        padding-left: 10rem;
     }
 
-    header div p {
-        font-size: 0.75rem;
+    header nav a {
+        font-size: 0.8rem;
     }
 
 
@@ -235,10 +237,7 @@ button {
     }
 
     .informacoes img {
-        width: 100%;
-        max-width: 15rem;
-        max-height: 15rem;
-        margin-right: 0;
+        display: none;
     }
 
     .informacoes p {
@@ -249,7 +248,9 @@ button {
     .checks {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 0 10% 1.875rem 10%;
+        gap: 0.625rem;
+        margin-bottom: 2.5rem;
+        margin-inline: 1rem;
     }
 
     .checks p {
@@ -269,16 +270,19 @@ button {
 
     button {
         width: 100%;
-        padding: 0.9375rem 0;
+        padding: 0.9375rem;
     }
 
     #dados {
-        flex-direction: column;
+        display: block;
+        justify-content: center;
+        align-items: center;
         gap: 0.625rem;
         margin-top: 1.875rem;
     }
 
     #dados p {
+        flex-direction: column;
         font-size: 0.875rem;
     }
 

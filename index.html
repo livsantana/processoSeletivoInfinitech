@@ -18,12 +18,12 @@
 
   <header>
     <img src="./imagens/logo-odontomais.png" alt="logo OdontoMais">
-    <div>
-      <p>INÍCIO</p>
-      <p>TRATAMENTOS</p>
-      <p>SOBRE NÓS</p>
-      <p>AGENDAMENTO</p>
-    </div>
+    <nav>
+      <a href="index.html">INICIO</a>
+      <a href="index.html">TRATAMENTOS</a>
+      <a href="index.html">SOBRE NÓS</a>
+      <a href="index.html">AGENDAMENTOS</a>
+    </nav>
   </header>
 
   <main>
@@ -64,18 +64,18 @@
     </section>
     <section class="forms">
       <p>Promoção válida apenas durante o mês de abril. Agende já sua avaliação para não perder o desconto!</p>
-      <form action="">
+      <form id="agendamento-form">
         <div class="input-box">
           <label for="nome"></label>
           <input type="name" placeholder="Digite seu nome" id="nome">
         </div>
         <div class="input-box">
           <label for="telefone"></label>
-          <input type="tel" placeholder="Digite seu telefone (00) 00000-0000" id="nome">
+          <input type="tel" placeholder="Digite seu telefone (00) 00000-0000" id="telefone">
         </div>
         <div class="input-box">
-          <label for="telefone"></label>
-          <input type="email" placeholder="Digite seu melhor email" id="nome">
+          <label for="email"></label>
+          <input type="email" placeholder="Digite seu melhor email" id="email">
         </div>
         <button>AGENDAR</button>
       </form>
@@ -89,6 +89,7 @@
       </div>
     </section>
   </main>
+  <script src="main.js"></script>
 </body>
 
 </html>
